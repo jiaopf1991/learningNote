@@ -30,3 +30,13 @@ git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
 
 git rm：删除文件
 如果误删，需要从版本库中恢复：git checkout -- fileName
+
+本地仓库与github远程关联：
+$ git remote add origin git@github.com:jiaopf1991/learningNote.git
+
+远程仓库的名字是origin,git的默认叫法。
+
+本地仓库所有内容推送到远程库：
+$ git push -u origin master（第一次推送加 -u ，之后不需要）
+
+
